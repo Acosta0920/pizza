@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ==========================================================================
+       SEO — PERSONALIZAR: título, descripción y datos del negocio
+       ========================================================================== -->
+  <title>Punto Italia · Restaurante Italiano en Bávaro | Pide Ahora</title>
+  <meta name="description" content="Punto Italia: auténtica cocina italiana en el corazón de Bávaro. Pizzas, pastas y sabores de Italia. Pide en línea o por WhatsApp." />
+  <meta name="keywords" content="pizzería, pizza artesanal, pizza a domicilio, horno de leña, pasta italiana, comida italiana" />
+  <meta name="author" content="Punto Italia" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://pizza.enmanuelacostarodriguez1020.workers.dev/" />
+
+  <!-- Open Graph / redes sociales -->
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:title" content="Punto Italia · Restaurante Italiano en Bávaro" />
+  <meta property="og:description" content="Auténtica cocina italiana en Bávaro. Pizzas, pastas y sabores de Italia. Pide ahora por WhatsApp." />
+  <meta property="og:image" content="images/ogimage.jpg" />
+  <meta property="og:url" content="https://pizza.enmanuelacostarodriguez1020.workers.dev/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="theme-color" content="#c81d25" />
+
+  <!-- ==========================================================================
+       FAVICON — PERSONALIZAR: reemplazar por el logo/isotipo de la marca
+       ========================================================================== -->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+
+  <!-- Preconnect para rendimiento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;0,900;1,600&family=Caveat:wght@600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ==========================================================================
+       SEO — Datos estructurados (Schema.org) para restaurante
+       PERSONALIZAR: nombre, dirección, teléfono, horario, menú y coordenadas reales
+       ========================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Punto Italia",
+    "image": "images/ogimage.jpg",
+    "servesCuisine": "Italiana, Pizzería",
+    "priceRange": "$$",
+    "telephone": "+1-809-455-7180",
+    "acceptsReservations": "false",
+    "menu": "https://pizza.enmanuelacostarodriguez1020.workers.dev//#menu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calle del Sabor 45",
+      "addressLocality": "Bávaro, Punta Cana",
+      "addressCountry": "DO"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Sunday"], "opens": "12:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "12:00", "closes": "00:00" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Botón para saltar al contenido (accesibilidad) -->
+  <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
+
+  <!-- ==========================================================================
+       NAVBAR — transparente sobre el hero, sólida al hacer scroll (sticky)
+       PERSONALIZAR: logo y enlaces del menú
+       ========================================================================== -->
+       <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__logo" aria-label="Punto Italia - Inicio">
+        <img src="images/logo.png" alt="Punto Italia" class="navbar__logo-img" />
+      </a>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Navegación principal">
+        <ul class="navbar__list">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#promociones">Promociones</a></li>
+          <li><a href="#historia">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="#menu" class="btn btn--primary navbar__nav-cta">Ordenar Ahora</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a href="#menu" class="btn btn--primary btn--sm navbar__actions-cta">Ordenar Ahora</a>
+
+        <button class="navbar__burger" id="burgerBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- ==========================================================================
+         HERO — Imagen grande, titular, subtítulo y dos botones
+         PERSONALIZAR: imagen de fondo, titular, subtítulo y sello destacado
+         ========================================================================== -->
+    <section class="hero" aria-label="Presentación principal">
+  <div class="hero__media">
+    <video
+      class="hero__video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+    >
+      <source src="hero/hero.mp4" type="video/mp4" />
+      Tu navegador no soporta video HTML5.
+    </video>
+
+    <div class="hero__overlay"></div>
+  </div>
+
+      <div class="container hero__content reveal" data-reveal>
+        <p class="eyebrow eyebrow--signature">Auténtica cocina italiana · Bávaro</p>
+        <h1 class="hero__title">
+          SABOR ITALIANO<br />
+          EN EL <span class="text-accent">CORAZÓN DEL CARIBE</span>
+        </h1>
+        <p class="hero__subtitle">
+          Pizzas, pastas y platos italianos elaborados con pasión y los mejores ingredientes. Directo a tu puerta o en nuestro local en Bávaro.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#menu" class="btn btn--primary btn--lg">Ver Menú</a>
+          <a href="https://wa.me/8094557180?text=Hola%2C%20quiero%20hacer%20un%20pedido" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 32 32" aria-hidden="true" class="btn__icon"><path fill="currentColor" d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.5.7 4.9 2 7L3 29.1l6.3-1.7c2 1.1 4.3 1.7 6.7 1.7 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9Zm0 23.8c-2.1 0-4.2-.6-6-1.6l-.4-.2-4.2 1.1 1.1-4.1-.3-.4a10.7 10.7 0 0 1-1.7-5.7c0-6 4.9-10.9 10.9-10.9S26.9 10 26.9 16 22.1 26.7 16 26.7Zm5.9-8.1c-.3-.2-1.9-.9-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.6 12.5 13 11 12.7 10.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4Z"/></svg>
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Sello / stamp — elemento de marca reutilizable (ver .stamp en CSS) -->
+      <div class="stamp stamp--hero" aria-hidden="true">
+        <span>100%</span>
+        <strong>Italiano</strong>
+      </div>
+
+      <a href="#menu" class="hero__scroll" aria-label="Desplázate hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ==========================================================================
+         PROMOCIONES
+         PERSONALIZAR: textos, precios y vigencia de cada promoción
+         ========================================================================== -->
+    <section class="section promotions" id="promociones" aria-labelledby="promotions-title">
+      <div class="container">
+        <header class="section__head section__head--center reveal" data-reveal>
+          <p class="eyebrow eyebrow--center">Ofertas de la semana</p>
+          <h2 class="section__title" id="promotions-title">Promociones <span class="text-accent">especiales</span></h2>
+        </header>
+
+        <div class="promotions__grid">
+          <article class="promo-card reveal" data-reveal>
+            <span class="promo-card__ribbon">Martes</span>
+            <img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?w=600&q=80&auto=format&fit=crop" alt="Dos pizzas medianas listas para compartir" loading="lazy" width="600" height="400" />
+            <div class="promo-card__body">
+              <h3>2x1 Martes de Pizza</h3>
+              <p>Lleva dos pizzas medianas al precio de una. Solo los martes, para comer o llevar.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20la%20promo%20de%202x1%20Martes" class="btn btn--outline btn--block" target="_blank" rel="noopener noreferrer">Aprovechar oferta</a>
+            </div>
+          </article>
+
+          <article class="promo-card promo-card--featured reveal" data-reveal>
+            <span class="promo-card__ribbon">Más pedida</span>
+            <img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?w=600&q=80&auto=format&fit=crop" alt="Combo familiar con pizza grande, pasta y bebidas" loading="lazy" width="600" height="400" />
+            <div class="promo-card__body">
+              <h3>Combo Familiar</h3>
+              <p>1 pizza grande + pasta + 4 bebidas + postre para compartir. Ideal para toda la familia.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20el%20Combo%20Familiar" class="btn btn--primary btn--block" target="_blank" rel="noopener noreferrer">Pedir combo</a>
+            </div>
+          </article>
+
+          <article class="promo-card reveal" data-reveal>
+            <span class="promo-card__ribbon">Desde $30</span>
+            <img src="https://images.unsplash.com/photo-1607013251379-e6eecfffe234?w=600&q=80&auto=format&fit=crop" alt="Repartidor entregando pedido de pizza a domicilio" loading="lazy" width="600" height="400" />
+            <div class="promo-card__body">
+              <h3>Envío Gratis</h3>
+              <p>En pedidos desde $30 dentro de nuestra zona de cobertura. Rápido y sin costo extra.</p>
+              <a href="#contacto" class="btn btn--outline btn--block">Ver zona de entrega</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MENÚ — categorías con pestañas: Pizzas, Pastas, Entradas, Bebidas, Postres
+         PERSONALIZAR: platillos, imágenes, descripciones y precios
+         ========================================================================== -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section__head section__head--center reveal" data-reveal>
+          <p class="eyebrow eyebrow--center">Lo mejor de Italia</p>
+          <h2 class="section__title" id="menu-title">Nuestro <span class="text-accent">menú</span></h2>
+        </header>
+
+        <div class="menu__tabs reveal" data-reveal role="tablist" aria-label="Categorías del menú">
+          <button class="menu__tab is-active" role="tab" aria-selected="true" data-category="pizzas">🍕 Pizzas</button>
+          <button class="menu__tab" role="tab" aria-selected="false" data-category="pastas">🍝 Pastas</button>
+          <button class="menu__tab" role="tab" aria-selected="false" data-category="entradas">🥖 Entradas</button>
+          <button class="menu__tab" role="tab" aria-selected="false" data-category="bebidas">🥤 Bebidas</button>
+          <button class="menu__tab" role="tab" aria-selected="false" data-category="postres">🍰 Postres</button>
+        </div>
+
+        <!-- PIZZAS -->
+        <div class="menu__grid" id="menu-pizzas" role="tabpanel">
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=500&q=80&auto=format&fit=crop" alt="Pizza Margherita con albahaca fresca" loading="lazy" width="500" height="400" />
+              <span class="menu-card__badge">Clásica</span>
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Margherita</h3>
+                <span class="menu-card__price">$9.50</span>
+              </div>
+              <p>Salsa de tomate San Marzano, mozzarella fresca, albahaca y aceite de oliva.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20una%20Pizza%20Margherita" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=500&q=80&auto=format&fit=crop" alt="Pizza Pepperoni con doble queso" loading="lazy" width="500" height="400" />
+              <span class="menu-card__badge menu-card__badge--popular">Popular</span>
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Pepperoni Supreme</h3>
+                <span class="menu-card__price">$11.00</span>
+              </div>
+              <p>Doble capa de pepperoni, mozzarella y orégano fresco sobre masa madre.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20una%20Pizza%20Pepperoni%20Supreme" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1548369937-47519962c11a?w=500&q=80&auto=format&fit=crop" alt="Pizza cuatro quesos derretidos" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Cuatro Quesos</h3>
+                <span class="menu-card__price">$12.50</span>
+              </div>
+              <p>Mozzarella, parmesano, gorgonzola y provolone en perfecto equilibrio.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20una%20Pizza%20Cuatro%20Quesos" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://www.pizzarecipe.org/wp-content/uploads/2019/01/Pizza-Diavola-2000x1500.jpg" alt="Pizza diávola picante con salame" loading="lazy" width="500" height="400" />
+              <span class="menu-card__badge">Picante</span>
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Diávola</h3>
+                <span class="menu-card__price">$11.50</span>
+              </div>
+              <p>Salame picante, chile calabrés, mozzarella y un toque de miel.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20una%20Pizza%20Diavola" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://static.bainet.es/clip/c6361c8c-255e-407b-b650-0724a30abc8c_16-9-aspect-ratio_1600w_0.webp" alt="Pizza hawaiana con piña y jamón" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Hawaiana</h3>
+                <span class="menu-card__price">$10.50</span>
+              </div>
+              <p>Jamón, piña caramelizada y mozzarella sobre salsa de tomate.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20una%20Pizza%20Hawaiana" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?w=500&q=80&auto=format&fit=crop" alt="Pizza vegetariana con vegetales frescos" loading="lazy" width="500" height="400" />
+              <span class="menu-card__badge">Vegetariana</span>
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Vegetariana</h3>
+                <span class="menu-card__price">$10.00</span>
+              </div>
+              <p>Pimientos, champiñones, cebolla morada, aceitunas y mozzarella.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20una%20Pizza%20Vegetariana" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1571066811602-716837d681de?w=500&q=80&auto=format&fit=crop" alt="Pizza BBQ de pollo con cebolla caramelizada" loading="lazy" width="500" height="400" />
+              <span class="menu-card__badge menu-card__badge--popular">Popular</span>
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>BBQ Pollo</h3>
+                <span class="menu-card__price">$11.50</span>
+              </div>
+              <p>Pollo a la parrilla, salsa BBQ, cebolla caramelizada y mozzarella.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20una%20Pizza%20BBQ%20Pollo" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?w=500&q=80&auto=format&fit=crop" alt="Pizza boscaiola con champiñones y tocineta" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Boscaiola</h3>
+                <span class="menu-card__price">$12.00</span>
+              </div>
+              <p>Champiñones salteados, tocineta crujiente, mozzarella y un toque de ajo.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20una%20Pizza%20Boscaiola" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- PASTAS -->
+        <div class="menu__grid" id="menu-pastas" role="tabpanel" hidden>
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=500&q=80&auto=format&fit=crop" alt="Fettuccine Alfredo cremoso" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Fettuccine Alfredo</h3>
+                <span class="menu-card__price">$9.00</span>
+              </div>
+              <p>Pasta fresca en salsa cremosa de mantequilla y parmesano.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20Fettuccine%20Alfredo" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?w=500&q=80&auto=format&fit=crop" alt="Lasaña boloñesa recién horneada" loading="lazy" width="500" height="400" />
+              <span class="menu-card__badge menu-card__badge--popular">Popular</span>
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Lasaña Boloñesa</h3>
+                <span class="menu-card__price">$10.50</span>
+              </div>
+              <p>Capas de pasta, carne braseada, bechamel y queso gratinado.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20Lasa%C3%B1a%20Bolo%C3%B1esa" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://imag.bonviveur.com/raviolis-de-espinacas-y-ricotta.webp" alt="Ravioles rellenos en salsa de tomate" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Ravioles de Ricotta</h3>
+                <span class="menu-card__price">$10.00</span>
+              </div>
+              <p>Rellenos de ricotta y espinaca en salsa de tomate y albahaca.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20Ravioles%20de%20Ricotta" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=500&q=80&auto=format&fit=crop" alt="Spaghetti a la carbonara con panceta" loading="lazy" width="500" height="400" />
+              <span class="menu-card__badge menu-card__badge--popular">Popular</span>
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Spaghetti Carbonara</h3>
+                <span class="menu-card__price">$9.50</span>
+              </div>
+              <p>Panceta crujiente, yema de huevo, parmesano y pimienta negra recién molida.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20Spaghetti%20Carbonara" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- ENTRADAS -->
+        <div class="menu__grid" id="menu-entradas" role="tabpanel" hidden>
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=500&q=80&auto=format&fit=crop" alt="Bruschettas con tomate y albahaca" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Bruschetta Clásica</h3>
+                <span class="menu-card__price">$5.50</span>
+              </div>
+              <p>Pan tostado con tomate fresco, ajo, albahaca y aceite de oliva.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20Bruschetta" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://lacocinadefrabisa.lavozdegalicia.es/wp-content/uploads/2014/02/Focaccia-aromatica-de-romero.jpg" alt="Focaccia con romero y aceite de oliva" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Focaccia al Romero</h3>
+                <span class="menu-card__price">$4.50</span>
+              </div>
+              <p>Horneada al momento con romero fresco, sal marina y aceite de oliva.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20Focaccia" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=500&q=80&auto=format&fit=crop" alt="Papas al horno con queso y romero" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Papas Rústicas</h3>
+                <span class="menu-card__price">$4.00</span>
+              </div>
+              <p>Papas horneadas con romero, ajo y una salsa de queso parmesano.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20Papas%20R%C3%BAsticas" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=500&q=80&auto=format&fit=crop" alt="Ensalada Caprese con tomate y mozzarella" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Ensalada Caprese</h3>
+                <span class="menu-card__price">$6.00</span>
+              </div>
+              <p>Tomate fresco, mozzarella de búfala, albahaca y aceite de oliva extra virgen.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20Ensalada%20Caprese" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- BEBIDAS -->
+        <div class="menu__grid" id="menu-bebidas" role="tabpanel" hidden>
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&q=80&auto=format&fit=crop" alt="Refresco frío en vaso con hielo" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Refresco 500ml</h3>
+                <span class="menu-card__price">$1.75</span>
+              </div>
+              <p>Variedad de sabores servidos bien fríos.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20un%20Refresco" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1523371054106-bbf80586c38c?w=500&q=80&auto=format&fit=crop" alt="Limonada natural con menta" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Limonada Natural</h3>
+                <span class="menu-card__price">$2.50</span>
+              </div>
+              <p>Preparada al momento con limón fresco y un toque de menta.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20una%20Limonada%20Natural" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1608270586620-248524c67de9?w=500&q=80&auto=format&fit=crop" alt="Cerveza artesanal servida en vaso" loading="lazy" width="500" height="400" />
+              <span class="menu-card__badge menu-card__badge--popular">Popular</span>
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Cerveza Italiano</h3>
+                <span class="menu-card__price">$3.50</span>
+              </div>
+              <p>Selección local de cervecerías artesanales de la región.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20una%20Cerveza%20Italiano" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=500&q=80&auto=format&fit=crop" alt="Copa de vino tinto" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Copa de Vino Tinto</h3>
+                <span class="menu-card__price">$4.50</span>
+              </div>
+              <p>Selección de vino tinto de la casa, perfecto para acompañar tu pizza.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20una%20Copa%20de%20Vino%20Tinto" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- POSTRES -->
+        <div class="menu__grid" id="menu-postres" role="tabpanel" hidden>
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&q=80&auto=format&fit=crop" alt="Tiramisú clásico con cacao" loading="lazy" width="500" height="400" />
+              <span class="menu-card__badge menu-card__badge--popular">Popular</span>
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Tiramisú</h3>
+                <span class="menu-card__price">$5.00</span>
+              </div>
+              <p>Receta tradicional con mascarpone, café espresso y cacao.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20un%20Tiramis%C3%BA" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?w=500&q=80&auto=format&fit=crop" alt="Cannoli sicilianos rellenos de ricotta" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Cannoli Siciliano</h3>
+                <span class="menu-card__price">$4.50</span>
+              </div>
+              <p>Crujientes, rellenos de ricotta dulce y chispas de chocolate.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20Cannoli%20Siciliano" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1541599468348-e96984315921?w=500&q=80&auto=format&fit=crop" alt="Pizza dulce de Nutella con fresas" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Pizza Nutella</h3>
+                <span class="menu-card__price">$7.50</span>
+              </div>
+              <p>Masa horneada cubierta de Nutella, fresas y azúcar glass.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20Pizza%20Nutella" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+
+          <article class="menu-card reveal" data-reveal>
+            <div class="menu-card__media">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&q=80&auto=format&fit=crop" alt="Panna cotta con salsa de frutos rojos" loading="lazy" width="500" height="400" />
+            </div>
+            <div class="menu-card__body">
+              <div class="menu-card__top">
+                <h3>Panna Cotta</h3>
+                <span class="menu-card__price">$5.50</span>
+              </div>
+              <p>Cremosa panna cotta italiana bañada en salsa de frutos rojos.</p>
+              <a href="https://wa.me/8094557180?text=Quiero%20pedir%20Panna%20Cotta" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Pedir</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         NUESTRA HISTORIA — imagen + texto
+         PERSONALIZAR: imagen, año de fundación y relato de la marca
+         ========================================================================== -->
+    <section class="section story" id="historia" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <div class="story__media reveal" data-reveal>
+          <img src="https://images.unsplash.com/photo-1552539618-7eec9b4d1796?w=900&q=80&auto=format&fit=crop" alt="Pizzero preparando masa artesanal a mano" loading="lazy" width="900" height="1000" />
+          <div class="stamp stamp--story" aria-hidden="true">
+            <span>Desde</span>
+            <strong>2016</strong>
+          </div>
+        </div>
+
+        <div class="story__content reveal" data-reveal>
+          <p class="eyebrow eyebrow--signature">Nuestra historia</p>
+          <h2 class="section__title">Una receta de familia, <span class="text-accent">horneada con fuego real</span></h2>
+          <p class="story__text">
+            Punto Italia nació en 2016 en una cocina pequeña con un horno de leña construido a mano. Lo que empezó como un sueño familiar se convirtió en el lugar favorito del barrio para compartir una pizza recién horneada.
+          </p>
+          <p class="story__text">
+            Hoy seguimos fieles a la receta original: masa madre fermentada 48 horas, tomates San Marzano e ingredientes que compramos frescos cada mañana. Nada de atajos, nada de conservantes — solo buena pizza, como debe ser.
+          </p>
+          <a href="#contacto" class="btn btn--outline">Conoce nuestro local</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ¿POR QUÉ ELEGIRNOS? — tarjetas con iconos
+         PERSONALIZAR: iconos, títulos y descripciones
+         ========================================================================== -->
+    <section class="section why" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section__head section__head--center reveal" data-reveal>
+          <p class="eyebrow eyebrow--center">Nuestra promesa</p>
+          <h2 class="section__title" id="why-title">¿Por qué <span class="text-accent">elegirnos</span>?</h2>
+        </header>
+
+        <div class="why__grid">
+          <article class="why-card reveal" data-reveal>
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C9 6 7 9 7 12a5 5 0 0 0 10 0c0-3-2-6-5-10Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 22v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Ingredientes frescos</h3>
+            <p>Compramos vegetales y quesos cada mañana en el mercado local.</p>
+          </article>
+
+          <article class="why-card reveal" data-reveal>
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Entrega rápida</h3>
+            <p>Tu pizza llega caliente en menos de 30 minutos o es gratis.</p>
+          </article>
+
+          <article class="why-card reveal" data-reveal>
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Masa artesanal</h3>
+            <p>Fermentada 48 horas para lograr una textura ligera y crocante.</p>
+          </article>
+
+          <article class="why-card reveal" data-reveal>
+            <div class="why-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 6.9L22 9l-6 4.9L17.8 22 12 17.8 6.2 22 8 13.9 2 9l7.6-.1L12 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Ingredientes premium</h3>
+            <p>Tomate San Marzano, mozzarella fresca y aceite de oliva extra virgen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GALERÍA — grid responsive con lightbox
+         PERSONALIZAR: imágenes del local y platillos
+         ========================================================================== -->
+    <section class="section gallery" id="galeria" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section__head section__head--center reveal" data-reveal>
+          <p class="eyebrow eyebrow--center">Directo de la cocina</p>
+          <h2 class="section__title" id="gallery-title">Nuestra <span class="text-accent">galería</span></h2>
+        </header>
+
+        <div class="gallery__grid reveal" data-reveal>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&q=80&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80&auto=format&fit=crop" alt="Pizza recién horneada vista superior" loading="lazy" width="500" height="500" />
+          </button>
+          <button class="gallery__item" data-full="images/4.png">
+            <img src="images/4.png" alt="Pizza dentro del horno de leña" loading="lazy" width="500" height="650" />
+          </button>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=1200&q=80&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?w=500&q=80&auto=format&fit=crop" alt="Corte de pizza con queso derretido" loading="lazy" width="500" height="400" />
+          </button>
+          <button class="gallery__item" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=80&auto=format&fit=crop" alt="Slice de pizza sostenido en la mano" loading="lazy" width="500" height="550" />
+          </button>
+          <button class="gallery__item" data-full="images/2.png">
+            <img src="images/2.png" alt="Mesa servida con pizza y bebidas" loading="lazy" width="500" height="400" />
+          </button>
+          <button class="gallery__item" data-full="images/1.png">
+            <img src="images/1.png" alt="Plato de pasta italiana casera" loading="lazy" width="500" height="500" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox de galería -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+      <button class="lightbox__close" id="lightboxClose" aria-label="Cerrar imagen">&times;</button>
+      <img src="" alt="" id="lightboxImg" />
+    </div>
+
+    <!-- ==========================================================================
+         OPINIONES — slider de testimonios
+         PERSONALIZAR: nombres, fotos y comentarios de clientes reales
+         ========================================================================== -->
+    <section class="section testimonials" id="opiniones" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section__head section__head--center reveal" data-reveal>
+          <p class="eyebrow eyebrow--center">Voces de nuestros clientes</p>
+          <h2 class="section__title" id="testimonials-title">Lo que dicen de <span class="text-accent">nosotros</span></h2>
+        </header>
+
+        <div class="testimonial-slider reveal" data-reveal>
+          <div class="testimonial-slider__track" id="testimonialTrack">
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p class="testimonial-card__text">"La mejor pizza de la zona, sin duda. La masa tiene un sabor que no encuentras en otro lado y siempre llega calientita."</p>
+              <footer>
+                <img class="testimonial-card__avatar" src="https://i.pravatar.cc/160?img=47" alt="" loading="lazy" width="56" height="56" />
+                <div class="testimonial-card__by">
+                  <cite>Valeria Gómez</cite>
+                  <span>Cliente frecuente</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p class="testimonial-card__text">"Pedí el Combo Familiar para un cumpleaños y fue un éxito total. Cantidad justa y sabor excelente."</p>
+              <footer>
+                <img class="testimonial-card__avatar" src="https://i.pravatar.cc/160?img=12" alt="" loading="lazy" width="56" height="56" />
+                <div class="testimonial-card__by">
+                  <cite>Julián Ramírez</cite>
+                  <span>Pedido a domicilio</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p class="testimonial-card__text">"Se nota que los ingredientes son frescos. La Diávola picante es mi favorita, ¡100% recomendada!"</p>
+              <footer>
+                <img class="testimonial-card__avatar" src="https://i.pravatar.cc/160?img=32" alt="" loading="lazy" width="56" height="56" />
+                <div class="testimonial-card__by">
+                  <cite>Camila Ortiz</cite>
+                  <span>Cliente desde 2021</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p class="testimonial-card__text">"El servicio a domicilio es rapidísimo y la pizza llega intacta. Ya es nuestra opción fija los viernes."</p>
+              <footer>
+                <img class="testimonial-card__avatar" src="https://i.pravatar.cc/160?img=68" alt="" loading="lazy" width="56" height="56" />
+                <div class="testimonial-card__by">
+                  <cite>Rafael Peña</cite>
+                  <span>Cliente frecuente</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p class="testimonial-card__text">"Llevé a toda la familia y hasta los más pequeños quedaron felices. El ambiente y la atención son excelentes."</p>
+              <footer>
+                <img class="testimonial-card__avatar" src="https://i.pravatar.cc/160?img=5" alt="" loading="lazy" width="56" height="56" />
+                <div class="testimonial-card__by">
+                  <cite>Estefanía Rosario</cite>
+                  <span>Cena en familia</span>
+                </div>
+              </footer>
+            </blockquote>
+
+            <blockquote class="testimonial-card">
+              <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</div>
+              <p class="testimonial-card__text">"El tiramisú es espectacular, justo como en Italia. Ya perdí la cuenta de cuántas veces he vuelto."</p>
+              <footer>
+                <img class="testimonial-card__avatar" src="https://i.pravatar.cc/160?img=51" alt="" loading="lazy" width="56" height="56" />
+                <div class="testimonial-card__by">
+                  <cite>Manuel Disla</cite>
+                  <span>Cliente desde 2022</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="testimonial-slider__controls">
+            <button id="testimonialPrev" aria-label="Opinión anterior">&larr;</button>
+            <div class="testimonial-slider__dots" id="testimonialDots"></div>
+            <button id="testimonialNext" aria-label="Opinión siguiente">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CTA — sección llamativa invitando a ordenar
+         PERSONALIZAR: texto de la oferta y enlace
+         ========================================================================== -->
+    <section class="cta-banner reveal" data-reveal aria-labelledby="cta-title">
+      <div class="container cta-banner__inner">
+        <h2 id="cta-title">¿Ya se te antojó?<br /><span class="text-accent">Ordena en menos de un minuto.</span></h2>
+        <a href="https://wa.me/8094557180?text=Hola%2C%20quiero%20hacer%20un%20pedido" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener noreferrer">
+          Pedir por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACTO — formulario, mapa, horario, teléfono, WhatsApp
+         PERSONALIZAR: campos del formulario, ubicación del mapa y datos de contacto
+         ========================================================================== -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__form-wrap reveal" data-reveal>
+          <p class="eyebrow">Hablemos</p>
+          <h2 class="section__title" id="contact-title">Haz tu <span class="text-accent">pedido o reserva</span></h2>
+          <p class="contact__intro">Completa el formulario y te confirmaremos tu pedido en minutos.</p>
+
+          <form id="orderForm" class="form" novalidate>
+            <div class="form__group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required autocomplete="name" />
+              <span class="form__error" data-error-for="name"></span>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 809 455 7180" required autocomplete="tel" />
+                <span class="form__error" data-error-for="phone"></span>
+              </div>
+              <div class="form__group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required autocomplete="email" />
+                <span class="form__error" data-error-for="email"></span>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="order-type">Tipo de pedido</label>
+              <select id="order-type" name="order-type" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="domicilio">Entrega a domicilio</option>
+                <option value="recoger">Para recoger</option>
+                <option value="mesa">Reservar mesa</option>
+              </select>
+              <span class="form__error" data-error-for="order-type"></span>
+            </div>
+
+            <div class="form__group">
+              <label for="message">Detalles del pedido</label>
+              <textarea id="message" name="message" rows="4" placeholder="Ej. 1 Pepperoni Supreme, 1 Limonada..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block btn--lg">Enviar pedido</button>
+
+            <p class="form__success" id="formSuccess" role="status" hidden>
+              ¡Gracias! Hemos recibido tu pedido. Te contactaremos muy pronto para confirmar.
+            </p>
+          </form>
+        </div>
+
+        <div class="contact__side">
+          <div class="contact__map reveal" data-reveal>
+            <!-- PERSONALIZAR: reemplazar el src del iframe con la ubicación real del restaurante en Google Maps -->
+            <iframe
+              title="Ubicación de Punto Italia en Google Maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.1!2d-68.4418!3d18.6827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDQwJzU3LjciTiA2OMKwMjYnMzAuNSJX!5e0!3m2!1ses!2sdo!4v1720000000000&q=Punto+Italia+B%C3%A1varo"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="contact__info-card reveal" data-reveal>
+            <h3>Horario</h3>
+            <ul class="contact__hours">
+              <li><span>Lun – Jue</span><span>12:00 PM – 10:00 PM</span></li>
+              <li><span>Vie – Sáb</span><span>12:00 PM – 12:00 AM</span></li>
+              <li><span>Domingo</span><span>12:00 PM – 10:00 PM</span></li>
+            </ul>
+            <hr />
+            <p>📍 Bávaro, Punta Cana, República Dominicana</p>
+            <p>📞 <a href="tel:+18094557180">+1 (809) 455-7180</a></p>
+            <a href="https://wa.me/18094557180?text=Hola%2C%20quiero%20hacer%20un%20pedido" class="btn btn--whatsapp btn--block" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER — redes sociales, horarios e información
+       PERSONALIZAR: enlaces, redes sociales y datos legales
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a href="#inicio" class="navbar__logo"><img src="images/logo.png" alt="Punto Italia" class="navbar__logo-img" /></a>
+        <p>Auténtica cocina italiana en Bávaro. Ingredientes premium, recetas clásicas y sabor de Italia.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/puntoitaliabavaro/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">IG</a>
+          <a href="https://wa.me/18094557180" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">WA</a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Enlaces del sitio">
+        <h4>Explorar</h4>
+        <a href="#menu">Menú</a>
+        <a href="#promociones">Promociones</a>
+        <a href="#historia">Nosotros</a>
+        <a href="#opiniones">Opiniones</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Horario</h4>
+        <p>Lun – Jue: 12pm – 10pm</p>
+        <p>Vie – Sáb: 12pm – 12am</p>
+        <p>Domingo: 12pm – 10pm</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <p>Bávaro, Punta Cana<br />República Dominicana</p>
+        <p><a href="tel:+18094557180">+1 (809) 455-7180</a></p>
+        <p><a href="mailto:hola@puntoitalia.example">hola@puntoitalia.example</a></p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="currentYear"></span> Punto Italia. Todos los derechos reservados.</p>
+      <p>Desarrollado por AT Digital Studio</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+       PERSONALIZAR: número de teléfono y mensaje predeterminado
+       ========================================================================== -->
+  <a
+    href="https://wa.me/8094557180?text=Hola%2C%20quiero%20hacer%20un%20pedido"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escríbenos por WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 2.9C8.8 2.9 2.9 8.8 2.9 16c0 2.5.7 4.9 2 7L3 29.1l6.3-1.7c2 1.1 4.3 1.7 6.7 1.7 7.2 0 13.1-5.9 13.1-13.1S23.2 2.9 16 2.9Zm0 23.8c-2.1 0-4.2-.6-6-1.6l-.4-.2-4.2 1.1 1.1-4.1-.3-.4a10.7 10.7 0 0 1-1.7-5.7c0-6 4.9-10.9 10.9-10.9S26.9 10 26.9 16 22.1 26.7 16 26.7Zm5.9-8.1c-.3-.2-1.9-.9-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C13.6 12.5 13 11 12.7 10.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.9-.8 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4Z"/></svg>
+  </a>
+
+  <!-- Botón volver arriba -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Volver arriba" hidden>
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
